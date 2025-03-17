@@ -29,9 +29,26 @@
 
 ![15](https://github.com/Foxbeerxxx/inf_sec1/blob/main/img/img15.png)`
 
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
+3. `Сканируем в офлайн режиме Meta `
+```
+nmap -sV 192.168.1.10
+```
+![1](https://github.com/Foxbeerxxx/inf_sec1/blob/main/img/img1.png)`
+
+4. `Видим результат открых портом  и версию сервиса`
+```
+ Какие уязвимости были вами обнаружены?
+    *   vsftpd 2.3.4 Backdoor Command Execution: (https://www.exploit-db.com/exploits/17491) - Эта версия vsftpd *специально* содержит бэкдор, позволяющий удаленно выполнять команды.  Достаточно подключиться к FTP серверу и использовать команду USER <user>: и PASS <password>
+
+    *   UnrealIRCd 3.2.8.1 - Backdoor Command Execution: [https://www.exploit-db.com/exploits/32702](https://www.exploit-db.com/exploits/32702) - UnrealIRCd версии 3.2.8.1 содержит бэкдор, который позволяет злоумышленнику удаленно выполнять команды на сервере. Metasploitable как раз использует уязвимую версию.
+
+
+
+
+```
+
+
+5. ``
 6. 
 
 ```
